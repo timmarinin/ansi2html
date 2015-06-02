@@ -1,0 +1,25 @@
+{
+  "name": "ansi2html",
+  "version": "1.0.0",
+  "description": "Stream to transform ANSI colors (like in terminal) to wrapped html",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marinintim/ansi2html"
+  },
+  "keywords": [
+    "ansi",
+    "colors",
+    "stream",
+    "html"
+  ],
+  "author": "Marinin Tim <marinintim@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marinintim/ansi2html/issues"
+  },
+  "homepage": "https://github.com/marinintim/ansi2html"
+}
