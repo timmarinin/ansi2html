@@ -4,7 +4,7 @@
   "description": "Stream to transform ANSI colors (like in terminal) to wrapped html",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha tests"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/marinintim/ansi2html/issues"
   },
-  "homepage": "https://github.com/marinintim/ansi2html"
+  "homepage": "https://github.com/marinintim/ansi2html",
+  "dependencies": {
+    "through2": "^0.6.5"
+  },
+  "devDependencies": {
+    "bl": "^0.9.4",
+    "mocha": "^2.2.5",
+    "readable-stream": "^1.0.33"
+  }
 }
