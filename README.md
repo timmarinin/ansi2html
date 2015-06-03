@@ -1,4 +1,4 @@
-ansi2html
+stream-ansi2html
 ========
 
 ![Dependencies](https://david-dm.org/marinintim/ansi2html.svg)
@@ -7,7 +7,7 @@ It is a stream to transform terminal color sequences to html tags.
 
 ## Usage
 ```
-var ansi2html = require('ansi2html')
+var ansi2html = require('stream-ansi2html')
 
 var s = Readable()
 s.push('\u001b\[32m;Hello, Github')

@@ -1,5 +1,5 @@
 {
-  "name": "ansi2html",
+  "name": "stream-ansi2html",
   "version": "1.0.0",
   "description": "Stream to transform ANSI colors (like in terminal) to wrapped html",
   "main": "index.js",
