@@ -36,14 +36,19 @@ function getReplacer(opts) {
 	}
 
 	if (colors.length) {
-	    colors.forEach(function(style) {
-		res += '<span ' + 
-                    (opts.style === 'inline' ?
-                     'style="' + inliner(style) :
-                     'class="' + classifier(style, opts.prefix)) +
-                    '">'
-		opts.remains += 1
-	    })
+            var color = colors.reduce(function(color, style) {
+                for (var k in style) {
+                    color[k] = style[k] || color[k]
+                }
+                return color
+            }, {})
+
+	    res += '<span ' +
+                (opts.style === 'inline'
+                 ? 'style="' + inliner(color)
+                 : 'class="' + classifier(color, opts.prefix))
+                + '">'
+	    opts.remains += 1
 	}
 
 	return res;
