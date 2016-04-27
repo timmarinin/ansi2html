@@ -4,7 +4,7 @@
   "description": "Stream to transform ANSI colors (like in terminal) to wrapped html",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests"
+    "test": "tape test"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,4 @@
+start
+[0m[01;34mthis is blue[0m
+normal
+[01;34mblue again[0m
