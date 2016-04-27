@@ -18,7 +18,7 @@ function classifier(style, prefix) {
 }
 
 function getReplacer(opts) {
-   return function replaceColor(match, offset, str) {
+    return function replaceColor(match, offset, str) {
 	var res = ""
 	var styles = match.slice(2, -1).split(';').map(styleByEscapeCode)
 
@@ -59,7 +59,7 @@ function getReplacer(opts) {
 
 module.exports = function(opts) {
     var rg = new RegExp("\u001b\\[[0-9;]*m", 'g')
-    
+
     opts = opts || {}
     opts.style = opts.style === 'class' ? 'class' : 'inline'
     opts.prefix = opts.prefix || 'ansi2html-'
@@ -72,14 +72,14 @@ module.exports = function(opts) {
 	if (opts.remains) {
 	    this.push('</span>'.repeat(opts.remains))
 	    opts.remains = 0
-	}	
+	}
 	done()
-    }    
-    
+    }
+
     function onChunk(buf, _, next) {
 	this.push(buf.toString().replace(rg, replacer))
 	next()
     }
-    
+
     return through(onChunk, onEnd)
 }
