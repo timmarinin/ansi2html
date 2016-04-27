@@ -23,11 +23,11 @@
   },
   "homepage": "https://github.com/marinintim/ansi2html",
   "dependencies": {
-    "through2": "^0.6.5"
+    "through2": "^2.0.1"
   },
   "devDependencies": {
-    "bl": "^0.9.4",
-    "mocha": "^2.2.5",
-    "readable-stream": "^1.0.33"
+    "bl": "^1.1.2",
+    "readable-stream": "^1.1.14",
+    "tape": "^4.5.1"
   }
 }
