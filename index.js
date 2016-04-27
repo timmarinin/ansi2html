@@ -30,7 +30,7 @@ function getReplacer(opts) {
             else colors.push(style)
         })
 
-	if (breakers.length) {
+	if (breakers.length && opts.remains > 0) {
 	    res += "</span>".repeat(breakers.length)
 	    opts.remains -= breakers.length
 	}
